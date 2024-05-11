@@ -1,0 +1,8 @@
+Ceci est un fichier
+Ligne 2
+Ligne 3
+Ecriture � la fin du fichier
+Ecriture à la fin du fichier
+Ecriture à la fin du fichier
+Ecriture à la fin du fichier
+Ecriture à la fin du fichier
