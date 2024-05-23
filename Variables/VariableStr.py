@@ -13,6 +13,12 @@ if __name__ == "__main__":
     print(string[0])
     string = string.upper()
     print(string)
+    version = 3.11
+    string = "Python " + str(version)
+    print(string)
+    string = f"Python {version}"
+    print(string)
+
 
 
 
