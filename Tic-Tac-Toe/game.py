@@ -74,7 +74,7 @@ def set_player_in_game_data(game_data:list, player:str, coordinate:str)->None:
     pass
 
 
-def game_over(game_data:list)->bool:
+def game_over(game_data:list):
     """
         @param game_data : list of list
         @return 
@@ -86,6 +86,4 @@ def game_over(game_data:list)->bool:
 
 
 if __name__ == "__main__":
-    print("Test!")
     os.system("cls")
-    print("Test!")
