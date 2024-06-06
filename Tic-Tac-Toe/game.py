@@ -1,6 +1,7 @@
 import os
 
 # @PLAYER
+PLAYER_NONE = " "
 PLAYER_O = "O"
 PLAYER_X = "X"
 
@@ -32,7 +33,7 @@ game_data = [[" ", " ", " "],
              [" ", " ", " "],
              [" ", " ", " "]]
 
-def display_game()->None:
+def display_game(game_data:list)->None:
     """
                 A   B   C
                _ _ _ _ _ _
@@ -45,12 +46,14 @@ def display_game()->None:
         TODO:
             - Afficher la carte du jeu comme ci-dessus en utilisant la variable 'game_data'
     """
+    print(game_data)
     pass
 
 
 
-def get_player_input(player:str)->str:
+def get_player_input(game_data:list, player:str)->str:
     """
+        @param game_data : @PLAYER
         @param player : @PLAYER
         @return coordinate: @COORDINATE
         TODO: 
@@ -59,7 +62,20 @@ def get_player_input(player:str)->str:
         - Redemander les coordonnées si elles sont incorrectes
         - Retourner les coordonnées si elles sont correctes sous le format @COORDINATE
     """
-    pass
+    while True:
+        #  Demander le joueur "player" d'entrer les coordonnées (les minuscules et majuscules sont acceptables")
+        player_input = input(f"Au tour de '{player}' de jouer: ")
+        # Convertir en majuscule
+        player_input = player_input.upper()
+        # Validater les coordonées
+        indexes = TRANSLATOR.get(player_input, None)
+        if indexes != None:
+            # Verifier la case dans les données du jeu
+            i = indexes[0]
+            j = indexes[1]
+            if game_data[i][j] == PLAYER_NONE:
+                break
+    return player_input
 
 
 def set_player_in_game_data(game_data:list, player:str, coordinate:str)->None:
@@ -71,8 +87,40 @@ def set_player_in_game_data(game_data:list, player:str, coordinate:str)->None:
             - Ajouter le 'player' dans le 'game_data' aux coordonées 'coordinate' en utilisant le 
                 dictionnaire TRANSLATOR
     """
-    pass
+    indexes = TRANSLATOR.get(coordinate, None)
+    i = indexes[0]
+    j = indexes[1]
+    game_data[i][j] = player
 
+def game_winner(game_data:list)->str:
+    """
+        @param game_data : list of list
+        @return 
+            - None : pas de gagnant
+            - player : le jeu est terminé avec le gagnant 'player' @PLAYER
+    """
+    # Horizontalement
+    for line in range(3):
+        if game_data[line][0] == game_data[line][1] and \
+           game_data[line][0] == game_data[line][2] and \
+           game_data[line][0] != PLAYER_NONE :
+            return game_data[line][0]
+    # Verticalement
+    for column in range(3):
+        if game_data[0][column] == game_data[1][column] and \
+           game_data[0][column] == game_data[2][column] and \
+           game_data[0][column] != PLAYER_NONE :
+            return game_data[0][column]
+    # Diagonalement
+    if  game_data[0][0] == game_data[1][1] and \
+        game_data[0][0] == game_data[2][2] and \
+        game_data[0][0] != PLAYER_NONE :
+        return game_data[1][1]
+    if  game_data[0][2] == game_data[1][1] and \
+        game_data[0][2] == game_data[2][0] and \
+        game_data[0][0] != PLAYER_NONE :
+        return game_data[1][1]
+    return None
 
 def game_over(game_data:list):
     """
@@ -82,8 +130,40 @@ def game_over(game_data:list):
             - None : le jeu est terminé avec match nul
             - player : le jeu est terminé avec le gagnant 'player' @PLAYER
     """
-    pass
+    # Verification d'un gagnant
+    winner = game_winner(game_data)
+    if winner is not None:
+        return winner
+    
+    # Verification de match nul
+    match_nul = None # match nul
+    for case_list in game_data:
+        for case in case_list:
+            if case is PLAYER_NONE:
+                match_nul = False
 
+    return match_nul
 
 if __name__ == "__main__":
+    player = PLAYER_X
+    winner = None
+    while True:
+        os.system("cls")
+        display_game(game_data)
+        coordinate_player = get_player_input(game_data, player)
+        set_player_in_game_data(game_data, player, coordinate_player)
+        # Verification d'un gagnant
+        winner = game_over(game_data)
+        if winner is not False: # game over
+            break
+        # Changement de player
+        if player == PLAYER_X:
+            player = PLAYER_O
+        elif player == PLAYER_O:
+            player = PLAYER_X
     os.system("cls")
+    display_game(game_data)
+    if winner is None :
+        print("Match nul")
+    else:
+        print(f"Le gagnant est {winner}")
