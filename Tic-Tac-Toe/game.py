@@ -19,13 +19,13 @@ COORDINATE_C3 = "C3"
 # @TRANSLATOR
 TRANSLATOR = {
     COORDINATE_A1 : (0, 0),
-    COORDINATE_A2 : (0, 1),
-    COORDINATE_A3 : (0, 2),
-    COORDINATE_B1 : (1, 0),
+    COORDINATE_A2 : (1, 0),
+    COORDINATE_A3 : (2, 0),
+    COORDINATE_B1 : (0, 1),
     COORDINATE_B2 : (1, 1),
-    COORDINATE_B3 : (1, 2),
-    COORDINATE_C1 : (2, 0),
-    COORDINATE_C2 : (2, 1),
+    COORDINATE_B3 : (2, 1),
+    COORDINATE_C1 : (0, 2),
+    COORDINATE_C2 : (1, 2),
     COORDINATE_C3 : (2, 2),
 }
 
@@ -46,8 +46,13 @@ def display_game(game_data:list)->None:
         TODO:
             - Afficher la carte du jeu comme ci-dessus en utilisant la variable 'game_data'
     """
-    print(game_data)
-    pass
+    print("    A   B   C")
+    print("   _ _ _ _ _ _")
+    index = 1
+    for line in game_data:
+        print(f"{index} | {line[0]} | {line[1]} | {line[2]} |")
+        print("  |_ _|_ _|_ _|")
+        index = index + 1
 
 
 
@@ -114,11 +119,11 @@ def game_winner(game_data:list)->str:
     # Diagonalement
     if  game_data[0][0] == game_data[1][1] and \
         game_data[0][0] == game_data[2][2] and \
-        game_data[0][0] != PLAYER_NONE :
+        game_data[1][1] != PLAYER_NONE :
         return game_data[1][1]
     if  game_data[0][2] == game_data[1][1] and \
         game_data[0][2] == game_data[2][0] and \
-        game_data[0][0] != PLAYER_NONE :
+        game_data[1][1] != PLAYER_NONE :
         return game_data[1][1]
     return None
 
