@@ -5,9 +5,10 @@
 
 class Person :
 
-    def __init__(self, param_nom, param_age):
+    def __init__(self, param_nom, param_age, nat="Togo"):
         self.nom = param_nom
         self.age = param_age
+        self.nationalite = nat
 
     def aniversaire(self):
         self.age = self.age + 1
@@ -21,10 +22,10 @@ class Person :
 
 
 aime = Person("Aime", 21)
-fostin = Person("Fostin", 24)
+fostin = Person("Fostin", 21)
 print(aime)
-aime.
 aime.aniversaire()
 aime.changement_de_nom("Aimé")
 print(aime)
 print("fostin : age =", fostin.age)
+# fostin.age != 
