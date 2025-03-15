@@ -1,0 +1,923 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "print_hello",
+        "importPath": "mon_module.hello",
+        "description": "mon_module.hello",
+        "isExtraImport": true,
+        "detail": "mon_module.hello",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "Exercices.Boucles.Exo_5_4_10_pyra",
+        "description": "Exercices.Boucles.Exo_5_4_10_pyra",
+        "peekOfCode": "r = (n - 1)*2 + 1\n1 -> 1\n2 -> 3\n3 -> 5\n4 -> 7\n\"\"\"",
+        "detail": "Exercices.Boucles.Exo_5_4_10_pyra",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Fichier.file",
+        "description": "Fichier.file",
+        "peekOfCode": "file = open(\"data.txt\", mode=\"r\") \nprint(file.readline())\nfile.close()\n# Ouverture en mode ajout à la fin du fichier\nfile = open(\"data.txt\", mode=\"a\", encoding=\"utf-8\")\nfile.write(\"\\nEcriture à la fin du fichier\")\nfile.close()\n# Ouverture en mode ecritue dans un fichier inexistant => creation du nouveau fichier\nfile = open(\"new_data.txt\", mode=\"w\", encoding=\"utf-8\")\nfile.write(\"\\nEcriture dans le nouveau fichier\")",
+        "detail": "Fichier.file",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Fichier.file",
+        "description": "Fichier.file",
+        "peekOfCode": "file = open(\"data.txt\", mode=\"a\", encoding=\"utf-8\")\nfile.write(\"\\nEcriture à la fin du fichier\")\nfile.close()\n# Ouverture en mode ecritue dans un fichier inexistant => creation du nouveau fichier\nfile = open(\"new_data.txt\", mode=\"w\", encoding=\"utf-8\")\nfile.write(\"\\nEcriture dans le nouveau fichier\")\nfile.close()\ndictionaire = {\n    \"eau\" : \"water\",\n    \"feu\" : \"fire\",",
+        "detail": "Fichier.file",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Fichier.file",
+        "description": "Fichier.file",
+        "peekOfCode": "file = open(\"new_data.txt\", mode=\"w\", encoding=\"utf-8\")\nfile.write(\"\\nEcriture dans le nouveau fichier\")\nfile.close()\ndictionaire = {\n    \"eau\" : \"water\",\n    \"feu\" : \"fire\",\n    \"sable\" : \"sand\"\n}\nimport json\nfile = open(\"python_data.json\", mode=\"w\", encoding=\"utf-8\")",
+        "detail": "Fichier.file",
+        "documentation": {}
+    },
+    {
+        "label": "dictionaire",
+        "kind": 5,
+        "importPath": "Fichier.file",
+        "description": "Fichier.file",
+        "peekOfCode": "dictionaire = {\n    \"eau\" : \"water\",\n    \"feu\" : \"fire\",\n    \"sable\" : \"sand\"\n}\nimport json\nfile = open(\"python_data.json\", mode=\"w\", encoding=\"utf-8\")\ndictionaire_str = json.dumps(dictionaire)\nprint(dictionaire_str)\nfile.write(dictionaire_str)",
+        "detail": "Fichier.file",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Fichier.file",
+        "description": "Fichier.file",
+        "peekOfCode": "file = open(\"python_data.json\", mode=\"w\", encoding=\"utf-8\")\ndictionaire_str = json.dumps(dictionaire)\nprint(dictionaire_str)\nfile.write(dictionaire_str)\nfile.close()",
+        "detail": "Fichier.file",
+        "documentation": {}
+    },
+    {
+        "label": "dictionaire_str",
+        "kind": 5,
+        "importPath": "Fichier.file",
+        "description": "Fichier.file",
+        "peekOfCode": "dictionaire_str = json.dumps(dictionaire)\nprint(dictionaire_str)\nfile.write(dictionaire_str)\nfile.close()",
+        "detail": "Fichier.file",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "Fichier.file_rechargement",
+        "description": "Fichier.file_rechargement",
+        "peekOfCode": "file = open(\"python_data.json\", mode=\"r\")\ndictionaire_str = file.read()\nfile.close()\nprint((dictionaire_str))\ndictionaire = {\n}\nimport json\ndictionaire = json.loads(dictionaire_str)\nprint(\"eau = \", dictionaire[\"eau\"])",
+        "detail": "Fichier.file_rechargement",
+        "documentation": {}
+    },
+    {
+        "label": "dictionaire_str",
+        "kind": 5,
+        "importPath": "Fichier.file_rechargement",
+        "description": "Fichier.file_rechargement",
+        "peekOfCode": "dictionaire_str = file.read()\nfile.close()\nprint((dictionaire_str))\ndictionaire = {\n}\nimport json\ndictionaire = json.loads(dictionaire_str)\nprint(\"eau = \", dictionaire[\"eau\"])",
+        "detail": "Fichier.file_rechargement",
+        "documentation": {}
+    },
+    {
+        "label": "dictionaire",
+        "kind": 5,
+        "importPath": "Fichier.file_rechargement",
+        "description": "Fichier.file_rechargement",
+        "peekOfCode": "dictionaire = {\n}\nimport json\ndictionaire = json.loads(dictionaire_str)\nprint(\"eau = \", dictionaire[\"eau\"])",
+        "detail": "Fichier.file_rechargement",
+        "documentation": {}
+    },
+    {
+        "label": "dictionaire",
+        "kind": 5,
+        "importPath": "Fichier.file_rechargement",
+        "description": "Fichier.file_rechargement",
+        "peekOfCode": "dictionaire = json.loads(dictionaire_str)\nprint(\"eau = \", dictionaire[\"eau\"])",
+        "detail": "Fichier.file_rechargement",
+        "documentation": {}
+    },
+    {
+        "label": "print(\"eau",
+        "kind": 5,
+        "importPath": "Fichier.file_rechargement",
+        "description": "Fichier.file_rechargement",
+        "peekOfCode": "print(\"eau = \", dictionaire[\"eau\"])",
+        "detail": "Fichier.file_rechargement",
+        "documentation": {}
+    },
+    {
+        "label": "function_ouverture",
+        "kind": 2,
+        "importPath": "Fichier.file_robuste",
+        "description": "Fichier.file_robuste",
+        "peekOfCode": "def function_ouverture(file_name):\n    with open(file_name, mode=\"r\") as file:\n        print(\"Ouverture\")\n        dictionaire_str = file.read()\n        print((dictionaire_str))\n        dictionaire = {}\n        import json\n        dictionaire = json.loads(dictionaire_str)\n        print(\"eau = \", dictionaire[\"eau\"])\n    print(\"Fichier deja fermé\")",
+        "detail": "Fichier.file_robuste",
+        "documentation": {}
+    },
+    {
+        "label": "secondes",
+        "kind": 5,
+        "importPath": "Modules.datetime.compteur_seconde",
+        "description": "Modules.datetime.compteur_seconde",
+        "peekOfCode": "secondes = 0\nwhile secondes < 30 :\n    secondes = secondes + 1\n    print(f\"Compteur : {secondes} secondes\")\n    time.sleep(1)\nprint(\"FIN\")",
+        "detail": "Modules.datetime.compteur_seconde",
+        "documentation": {}
+    },
+    {
+        "label": "entree",
+        "kind": 2,
+        "importPath": "Modules.math.racine",
+        "description": "Modules.math.racine",
+        "peekOfCode": "def entree() -> float:\n    local_var = 5\n    print(PI)\n    while True:\n        # recuperer l'entrée de l'utilisateur\n        \"\"\"\n            ceci est un commentaire\n            sur plusieurs lignes\n        \"\"\"\n        nombre = input(\"Entrez un nombre réel: \")",
+        "detail": "Modules.math.racine",
+        "documentation": {}
+    },
+    {
+        "label": "PI",
+        "kind": 5,
+        "importPath": "Modules.math.racine",
+        "description": "Modules.math.racine",
+        "peekOfCode": "PI = 3.14\n[x, y, z ] = [ \"Orange\", \"Banana\", \"Cherry\" ]\ndef entree() -> float:\n    local_var = 5\n    print(PI)\n    while True:\n        # recuperer l'entrée de l'utilisateur\n        \"\"\"\n            ceci est un commentaire\n            sur plusieurs lignes",
+        "detail": "Modules.math.racine",
+        "documentation": {}
+    },
+    {
+        "label": "nombre",
+        "kind": 5,
+        "importPath": "Modules.math.racine",
+        "description": "Modules.math.racine",
+        "peekOfCode": "nombre = entree()\nnombrE = 0\nprint(\"La racine carrée de\", nombre, \"est\", math.sqrt(nombre))\nprint(f\"La racine carrée de {nombre} est {racine_carre(nombre)}\")\nprint(PI)",
+        "detail": "Modules.math.racine",
+        "documentation": {}
+    },
+    {
+        "label": "nombrE",
+        "kind": 5,
+        "importPath": "Modules.math.racine",
+        "description": "Modules.math.racine",
+        "peekOfCode": "nombrE = 0\nprint(\"La racine carrée de\", nombre, \"est\", math.sqrt(nombre))\nprint(f\"La racine carrée de {nombre} est {racine_carre(nombre)}\")\nprint(PI)",
+        "detail": "Modules.math.racine",
+        "documentation": {}
+    },
+    {
+        "label": "aleatoire",
+        "kind": 2,
+        "importPath": "Modules.math_polymone.polynome",
+        "description": "Modules.math_polymone.polynome",
+        "peekOfCode": "def aleatoire()->int:\n    return 1\ndef image(x:float)->float:\n    return x*x*(x + 1) + aleatoire() + A",
+        "detail": "Modules.math_polymone.polynome",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 2,
+        "importPath": "Modules.math_polymone.polynome",
+        "description": "Modules.math_polymone.polynome",
+        "peekOfCode": "def image(x:float)->float:\n    return x*x*(x + 1) + aleatoire() + A",
+        "detail": "Modules.math_polymone.polynome",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "Modules.math_polymone.polynome",
+        "description": "Modules.math_polymone.polynome",
+        "peekOfCode": "A = 10\ndef aleatoire()->int:\n    return 1\ndef image(x:float)->float:\n    return x*x*(x + 1) + aleatoire() + A",
+        "detail": "Modules.math_polymone.polynome",
+        "documentation": {}
+    },
+    {
+        "label": "print_hello",
+        "kind": 2,
+        "importPath": "Modules.mon_module.hello",
+        "description": "Modules.mon_module.hello",
+        "peekOfCode": "def print_hello():\n    print(\"hello\")\ndef print_hello2():\n    print(\"hello\")",
+        "detail": "Modules.mon_module.hello",
+        "documentation": {}
+    },
+    {
+        "label": "print_hello2",
+        "kind": 2,
+        "importPath": "Modules.mon_module.hello",
+        "description": "Modules.mon_module.hello",
+        "peekOfCode": "def print_hello2():\n    print(\"hello\")",
+        "detail": "Modules.mon_module.hello",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE",
+        "kind": 6,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "class COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"\n    B1 = \"B1\"\n    B2 = \"B2\"\n    B3 = \"B3\"\n    C1 = \"C1\"\n    C2 = \"C2\"\n    C3 = \"C3\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_A1",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_A1 = \"A1\"\nCOORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_A2",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_A3",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_B1",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_B2",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"\n    B1 = \"B1\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_B3",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"\n    B1 = \"B1\"\n    B2 = \"B2\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_C1",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"\n    B1 = \"B1\"\n    B2 = \"B2\"\n    B3 = \"B3\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_C2",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"\n    B1 = \"B1\"\n    B2 = \"B2\"\n    B3 = \"B3\"\n    C1 = \"C1\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_C3",
+        "kind": 5,
+        "importPath": "Modules.main",
+        "description": "Modules.main",
+        "peekOfCode": "COORDINATE_C3 = \"C3\"\nclass COORDINATE(Enum):\n    A1 = \"A1\"\n    A2 = \"A2\"\n    A3 = \"A3\"\n    B1 = \"B1\"\n    B2 = \"B2\"\n    B3 = \"B3\"\n    C1 = \"C1\"\n    C2 = \"C2\"",
+        "detail": "Modules.main",
+        "documentation": {}
+    },
+    {
+        "label": "Perso",
+        "kind": 6,
+        "importPath": "POO.person",
+        "description": "POO.person",
+        "peekOfCode": "class Person :\n    def __init__(self, param_nom, param_age, nat=\"Togo\"):\n        self.nom = param_nom\n        self.age = param_age\n        self.nationalite = nat\n    def aniversaire(self):\n        self.age = self.age + 1\n    def changement_de_nom(self, nom):\n        self.nom = nom\n    def __str__(self):",
+        "detail": "POO.person",
+        "documentation": {}
+    },
+    {
+        "label": "aime",
+        "kind": 5,
+        "importPath": "POO.person",
+        "description": "POO.person",
+        "peekOfCode": "aime = Person(\"Aime\", 21)\nfostin = Person(\"Fostin\", 21)\nprint(aime)\naime.aniversaire()\naime.changement_de_nom(\"Aimé\")\nprint(aime)\nprint(\"fostin : age =\", fostin.age)\n# fostin.age !=",
+        "detail": "POO.person",
+        "documentation": {}
+    },
+    {
+        "label": "fostin",
+        "kind": 5,
+        "importPath": "POO.person",
+        "description": "POO.person",
+        "peekOfCode": "fostin = Person(\"Fostin\", 21)\nprint(aime)\naime.aniversaire()\naime.changement_de_nom(\"Aimé\")\nprint(aime)\nprint(\"fostin : age =\", fostin.age)\n# fostin.age !=",
+        "detail": "POO.person",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "Python-Web-App.webapp",
+        "description": "Python-Web-App.webapp",
+        "peekOfCode": "def index():\n   return \"Hello Aimé\"\n#########################################################\nif __name__ == \"__main__\":\n   app.run(host='0.0.0.0', port=8080, debug=False)",
+        "detail": "Python-Web-App.webapp",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Python-Web-App.webapp",
+        "description": "Python-Web-App.webapp",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/\")\ndef index():\n   return \"Hello Aimé\"\n#########################################################\nif __name__ == \"__main__\":\n   app.run(host='0.0.0.0', port=8080, debug=False)",
+        "detail": "Python-Web-App.webapp",
+        "documentation": {}
+    },
+    {
+        "label": "display_game",
+        "kind": 2,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "def display_game(game_data:list)->None:\n    \"\"\"\n                A   B   C\n               _ _ _ _ _ _\n            1 | X | O | X |\n              |_ _|_ _|_ _|\n            2 | O | X | O |\n              |_ _|_ _|_ _|\n            3 | O | O | X |\n              |_ _|_ _|_ _|",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "get_player_input",
+        "kind": 2,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "def get_player_input(game_data:list, player:str)->str:\n    \"\"\"\n        @param game_data : @PLAYER\n        @param player : @PLAYER\n        @return coordinate: @COORDINATE\n        TODO: \n        - Demander le joueur \"player\" d'entrer les coordonnées (les minuscules et majuscules sont acceptables\")\n        - Validater les coordonées\n        - Redemander les coordonnées si elles sont incorrectes\n        - Retourner les coordonnées si elles sont correctes sous le format @COORDINATE",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "set_player_in_game_data",
+        "kind": 2,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "def set_player_in_game_data(game_data:list, player:str, coordinate:str)->None:\n    \"\"\"\n        @param game_data : list of list\n        @param player : @PLAYER\n        @paramm coordinate: @COORDINATE\n        TODO:\n            - Ajouter le 'player' dans le 'game_data' aux coordonées 'coordinate' en utilisant le \n                dictionnaire TRANSLATOR\n    \"\"\"\n    indexes = TRANSLATOR.get(coordinate, None)",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "game_winner",
+        "kind": 2,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "def game_winner(game_data:list)->str:\n    \"\"\"\n        @param game_data : list of list\n        @return \n            - None : pas de gagnant\n            - player : le jeu est terminé avec le gagnant 'player' @PLAYER\n    \"\"\"\n    # Horizontalement\n    for line in range(3):\n        if game_data[line][0] == game_data[line][1] and \\",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "game_over",
+        "kind": 2,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "def game_over(game_data:list):\n    \"\"\"\n        @param game_data : list of list\n        @return \n            - False : le jeu continue\n            - None : le jeu est terminé avec match nul\n            - player : le jeu est terminé avec le gagnant 'player' @PLAYER\n    \"\"\"\n    # Verification d'un gagnant\n    winner = game_winner(game_data)",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "PLAYER_NONE",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "PLAYER_NONE = \" \"\nPLAYER_O = \"O\"\nPLAYER_X = \"X\"\n# @COORDINATE\nCOORDINATE_A1 = \"A1\"\nCOORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "PLAYER_O",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "PLAYER_O = \"O\"\nPLAYER_X = \"X\"\n# @COORDINATE\nCOORDINATE_A1 = \"A1\"\nCOORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "PLAYER_X",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "PLAYER_X = \"X\"\n# @COORDINATE\nCOORDINATE_A1 = \"A1\"\nCOORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_A1",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_A1 = \"A1\"\nCOORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_A2",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_A2 = \"A2\"\nCOORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_A3",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_A3 = \"A3\"\nCOORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_B1",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_B1 = \"B1\"\nCOORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_B2",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_B2 = \"B2\"\nCOORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),\n    COORDINATE_A3 : (2, 0),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_B3",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_B3 = \"B3\"\nCOORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),\n    COORDINATE_A3 : (2, 0),\n    COORDINATE_B1 : (0, 1),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_C1",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_C1 = \"C1\"\nCOORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),\n    COORDINATE_A3 : (2, 0),\n    COORDINATE_B1 : (0, 1),\n    COORDINATE_B2 : (1, 1),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_C2",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_C2 = \"C2\"\nCOORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),\n    COORDINATE_A3 : (2, 0),\n    COORDINATE_B1 : (0, 1),\n    COORDINATE_B2 : (1, 1),\n    COORDINATE_B3 : (2, 1),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "COORDINATE_C3",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "COORDINATE_C3 = \"C3\"\n# @TRANSLATOR\nTRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),\n    COORDINATE_A3 : (2, 0),\n    COORDINATE_B1 : (0, 1),\n    COORDINATE_B2 : (1, 1),\n    COORDINATE_B3 : (2, 1),\n    COORDINATE_C1 : (0, 2),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "TRANSLATOR",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "TRANSLATOR = {\n    COORDINATE_A1 : (0, 0),\n    COORDINATE_A2 : (1, 0),\n    COORDINATE_A3 : (2, 0),\n    COORDINATE_B1 : (0, 1),\n    COORDINATE_B2 : (1, 1),\n    COORDINATE_B3 : (2, 1),\n    COORDINATE_C1 : (0, 2),\n    COORDINATE_C2 : (1, 2),\n    COORDINATE_C3 : (2, 2),",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "game_data",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game",
+        "description": "Tic-Tac-Toe.game",
+        "peekOfCode": "game_data = [[\" \", \" \", \" \"],\n             [\" \", \" \", \" \"],\n             [\" \", \" \", \" \"]]\ndef display_game(game_data:list)->None:\n    \"\"\"\n                A   B   C\n               _ _ _ _ _ _\n            1 | X | O | X |\n              |_ _|_ _|_ _|\n            2 | O | X | O |",
+        "detail": "Tic-Tac-Toe.game",
+        "documentation": {}
+    },
+    {
+        "label": "Tic_Tac_Toe",
+        "kind": 6,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "class Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------\n    def __init__(self):\n        self.window = Tk()\n        self.window.title('My First Project: Tic-Tac-Toe Version Assiongbon Aimé KPODAR ')\n        self.canvas = Canvas(self.window, width=size_of_board, height=size_of_board)\n        self.canvas.pack()\n        # Input from user in form of clicks",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "size_of_board",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "size_of_board = 600\nsymbol_size = (size_of_board / 3 - size_of_board / 8) / 2\nsymbol_thickness = 50\nsymbol_X_color = '#EE4035'\nsymbol_O_color = '#0492CF'\nGreen_color = '#7BC043'\nclass Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "symbol_size",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "symbol_size = (size_of_board / 3 - size_of_board / 8) / 2\nsymbol_thickness = 50\nsymbol_X_color = '#EE4035'\nsymbol_O_color = '#0492CF'\nGreen_color = '#7BC043'\nclass Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------\n    def __init__(self):",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "symbol_thickness",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "symbol_thickness = 50\nsymbol_X_color = '#EE4035'\nsymbol_O_color = '#0492CF'\nGreen_color = '#7BC043'\nclass Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------\n    def __init__(self):\n        self.window = Tk()",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "symbol_X_color",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "symbol_X_color = '#EE4035'\nsymbol_O_color = '#0492CF'\nGreen_color = '#7BC043'\nclass Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------\n    def __init__(self):\n        self.window = Tk()\n        self.window.title('My First Project: Tic-Tac-Toe Version Assiongbon Aimé KPODAR ')",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "symbol_O_color",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "symbol_O_color = '#0492CF'\nGreen_color = '#7BC043'\nclass Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------\n    def __init__(self):\n        self.window = Tk()\n        self.window.title('My First Project: Tic-Tac-Toe Version Assiongbon Aimé KPODAR ')\n        self.canvas = Canvas(self.window, width=size_of_board, height=size_of_board)",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "Green_color",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "Green_color = '#7BC043'\nclass Tic_Tac_Toe():\n    # ------------------------------------------------------------------\n    # Initialization Functions:\n    # ------------------------------------------------------------------\n    def __init__(self):\n        self.window = Tk()\n        self.window.title('My First Project: Tic-Tac-Toe Version Assiongbon Aimé KPODAR ')\n        self.canvas = Canvas(self.window, width=size_of_board, height=size_of_board)\n        self.canvas.pack()",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "game_instance",
+        "kind": 5,
+        "importPath": "Tic-Tac-Toe.game_main_version1",
+        "description": "Tic-Tac-Toe.game_main_version1",
+        "peekOfCode": "game_instance = Tic_Tac_Toe()\ngame_instance.mainloop()",
+        "detail": "Tic-Tac-Toe.game_main_version1",
+        "documentation": {}
+    },
+    {
+        "label": "car_name",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "car_name = \"Volvohdhhd\"\ncar_name = 'Volvo'\ncar_name = \"\"\"Volvo\nhhhd\nhhshhsh\n\"\"\"\nc = 4j+ 2\nprint(type(c))\ncar_name = car_name.upper()\nprint(car_name)",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "car_name",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "car_name = 'Volvo'\ncar_name = \"\"\"Volvo\nhhhd\nhhshhsh\n\"\"\"\nc = 4j+ 2\nprint(type(c))\ncar_name = car_name.upper()\nprint(car_name)\nvrai = True",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "car_name",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "car_name = \"\"\"Volvo\nhhhd\nhhshhsh\n\"\"\"\nc = 4j+ 2\nprint(type(c))\ncar_name = car_name.upper()\nprint(car_name)\nvrai = True\nfaux = False",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "c = 4j+ 2\nprint(type(c))\ncar_name = car_name.upper()\nprint(car_name)\nvrai = True\nfaux = False\nprint(type(faux))\nvaleur = None\nprint(type(valeur))\nif __name__ == \"__main__\":",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "car_name",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "car_name = car_name.upper()\nprint(car_name)\nvrai = True\nfaux = False\nprint(type(faux))\nvaleur = None\nprint(type(valeur))\nif __name__ == \"__main__\":\n    print(\"Le dernier\")",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "vrai",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "vrai = True\nfaux = False\nprint(type(faux))\nvaleur = None\nprint(type(valeur))\nif __name__ == \"__main__\":\n    print(\"Le dernier\")",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "faux",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "faux = False\nprint(type(faux))\nvaleur = None\nprint(type(valeur))\nif __name__ == \"__main__\":\n    print(\"Le dernier\")",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "valeur",
+        "kind": 5,
+        "importPath": "Variables.exercice",
+        "description": "Variables.exercice",
+        "peekOfCode": "valeur = None\nprint(type(valeur))\nif __name__ == \"__main__\":\n    print(\"Le dernier\")",
+        "detail": "Variables.exercice",
+        "documentation": {}
+    },
+    {
+        "label": "liste",
+        "kind": 5,
+        "importPath": "Variables.ExerciceConditionBoucle",
+        "description": "Variables.ExerciceConditionBoucle",
+        "peekOfCode": "liste = [1, 2, 10, 45, 18, 15, 32, 14, 13, 10]\nif __name__ == \"__main__\":\n    print(\"BEGIN ExerciceConditionBoucle.py\")\n    # 0. Creer une nouvelle liste\n    liste_resultat = []\n    # 1. Parcourir la liste\n    for i in liste:\n    # 2. Verifier si l'element courant est multiple de 2\n        if (i % 2) == 0: # le reste de la division entière est égal 0\n            pass",
+        "detail": "Variables.ExerciceConditionBoucle",
+        "documentation": {}
+    },
+    {
+        "label": "liste",
+        "kind": 5,
+        "importPath": "Variables.ExerciceLists",
+        "description": "Variables.ExerciceLists",
+        "peekOfCode": "liste = [\"orange\", \"oran\", \"mango\", \"kiwi\", \"pineapple\", \"banana\"]\nif __name__ == \"__main__\":\n    print(\"BEGIN ExerciceLists.py\")\n    taille = len(liste)\n    print(\"len(liste) =\", len(liste))\n    for i in range(taille - 1):\n        if len(liste[i]) > len(liste[i+1]):\n            temp = liste[i]\n            liste[i] = liste[i+1]\n            liste[i+1] = temp",
+        "detail": "Variables.ExerciceLists",
+        "documentation": {}
+    },
+    {
+        "label": "multiplier_par_2",
+        "kind": 2,
+        "importPath": "Variables.FunctionList",
+        "description": "Variables.FunctionList",
+        "peekOfCode": "def multiplier_par_2(liste: list)->None:\n    # multiplier tous les elements par 2\n    for index in range(len(liste)):\n        liste[index] = liste[index] * 2\ndef multiplier_par_2_int(param: int)->None:\n    # multiplier tous les elements par 2\n    param = param * 2\ndef modifier_str(param: str)->None:\n    # multiplier tous les elements par 2\n    param = param + \"_modifier\"",
+        "detail": "Variables.FunctionList",
+        "documentation": {}
+    },
+    {
+        "label": "multiplier_par_2_int",
+        "kind": 2,
+        "importPath": "Variables.FunctionList",
+        "description": "Variables.FunctionList",
+        "peekOfCode": "def multiplier_par_2_int(param: int)->None:\n    # multiplier tous les elements par 2\n    param = param * 2\ndef modifier_str(param: str)->None:\n    # multiplier tous les elements par 2\n    param = param + \"_modifier\"\n    print(\"param =\", param)\nif __name__ == \"__main__\":\n    ma_liste = [1, 2, 3, 4, 5]\n    print(\"ma_liste =\", ma_liste)",
+        "detail": "Variables.FunctionList",
+        "documentation": {}
+    },
+    {
+        "label": "modifier_str",
+        "kind": 2,
+        "importPath": "Variables.FunctionList",
+        "description": "Variables.FunctionList",
+        "peekOfCode": "def modifier_str(param: str)->None:\n    # multiplier tous les elements par 2\n    param = param + \"_modifier\"\n    print(\"param =\", param)\nif __name__ == \"__main__\":\n    ma_liste = [1, 2, 3, 4, 5]\n    print(\"ma_liste =\", ma_liste)\n    multiplier_par_2(ma_liste)\n    print(\"ma_liste =\", ma_liste)\n    n = 7",
+        "detail": "Variables.FunctionList",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "Variables.Functions",
+        "description": "Variables.Functions",
+        "peekOfCode": "def hello():\n    print(\"Hello!\")\n    pass\ndef random_number():\n    return 0\ndef multiply(a : int, b: int)->int:\n    return a * b\nif __name__ == \"__main__\":\n    print(\"BEGIN Functions.py\")\n    print(hello())",
+        "detail": "Variables.Functions",
+        "documentation": {}
+    },
+    {
+        "label": "random_number",
+        "kind": 2,
+        "importPath": "Variables.Functions",
+        "description": "Variables.Functions",
+        "peekOfCode": "def random_number():\n    return 0\ndef multiply(a : int, b: int)->int:\n    return a * b\nif __name__ == \"__main__\":\n    print(\"BEGIN Functions.py\")\n    print(hello())\n    n = random_number()\n    print(\"n =\", n)\n    result = multiply(5, 2)",
+        "detail": "Variables.Functions",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "Variables.Functions",
+        "description": "Variables.Functions",
+        "peekOfCode": "def multiply(a : int, b: int)->int:\n    return a * b\nif __name__ == \"__main__\":\n    print(\"BEGIN Functions.py\")\n    print(hello())\n    n = random_number()\n    print(\"n =\", n)\n    result = multiply(5, 2)\n    print(\"multiply(2, 5) =\", result)",
+        "detail": "Variables.Functions",
+        "documentation": {}
+    },
+    {
+        "label": "nombre",
+        "kind": 5,
+        "importPath": "Variables.VariableCasting",
+        "description": "Variables.VariableCasting",
+        "peekOfCode": "nombre = 3.14\n# 10\nnombreString = \"105\"\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableCasting.py\")\n    nombre_entier = int(nombre)\n    print(nombre_entier, type(nombre_entier))\n    nombre_reel = float(nombreString)\n    print(nombre_reel, type(nombre_reel))\n    nombre_entier = int(nombre_reel)",
+        "detail": "Variables.VariableCasting",
+        "documentation": {}
+    },
+    {
+        "label": "nombreString",
+        "kind": 5,
+        "importPath": "Variables.VariableCasting",
+        "description": "Variables.VariableCasting",
+        "peekOfCode": "nombreString = \"105\"\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableCasting.py\")\n    nombre_entier = int(nombre)\n    print(nombre_entier, type(nombre_entier))\n    nombre_reel = float(nombreString)\n    print(nombre_reel, type(nombre_reel))\n    nombre_entier = int(nombre_reel)\n    print(nombre_entier, type(nombre_entier))",
+        "detail": "Variables.VariableCasting",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict",
+        "kind": 5,
+        "importPath": "Variables.VariableDict",
+        "description": "Variables.VariableDict",
+        "peekOfCode": "my_dict = {\n    \"eau\": 12,\n    \"vin\": 10\n}\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableDict.py\")\n    print(type(my_dict))\n    print(\"len(my_dict) =\", len(my_dict))\n    print(\"my_dict =\", my_dict)\n    # Lire un element",
+        "detail": "Variables.VariableDict",
+        "documentation": {}
+    },
+    {
+        "label": "nombre",
+        "kind": 5,
+        "importPath": "Variables.VariableFloat",
+        "description": "Variables.VariableFloat",
+        "peekOfCode": "nombre = 3.14\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableFloat.py\")\n    print(type(nombre))\n    quotient = nombre // 2  # division entiere\n    print(quotient, type(quotient))\n    quotient = nombre / 2  # division réelle\n    print(quotient, type(quotient))\n    quotient = nombre % 2  # modulo\n    quotient2 = nombre - (nombre // 2) * 2",
+        "detail": "Variables.VariableFloat",
+        "documentation": {}
+    },
+    {
+        "label": "nombre",
+        "kind": 5,
+        "importPath": "Variables.VariableInt",
+        "description": "Variables.VariableInt",
+        "peekOfCode": "nombre = 5\n#nombre = nombre + 4  # nombre += 4\nnombre += 4\nprint(nombre)\nif __name__ == \"__main__\":\n    print(\"BEGIN\")\n    print(type(nombre))\n    puissance_3 = nombre ** 3\n    reste = nombre % 3\n    quotient = nombre // 3",
+        "detail": "Variables.VariableInt",
+        "documentation": {}
+    },
+    {
+        "label": "#nombre",
+        "kind": 5,
+        "importPath": "Variables.VariableInt",
+        "description": "Variables.VariableInt",
+        "peekOfCode": "#nombre = nombre + 4  # nombre += 4\nnombre += 4\nprint(nombre)\nif __name__ == \"__main__\":\n    print(\"BEGIN\")\n    print(type(nombre))\n    puissance_3 = nombre ** 3\n    reste = nombre % 3\n    quotient = nombre // 3\n    print(puissance_3, \"reste =\",reste, \"quotient =\", quotient)",
+        "detail": "Variables.VariableInt",
+        "documentation": {}
+    },
+    {
+        "label": "liste",
+        "kind": 5,
+        "importPath": "Variables.VariableLists",
+        "description": "Variables.VariableLists",
+        "peekOfCode": "liste = [2, 3, 2, 5, 7, 11, 13, 11, 12.522, \"dtdt\"]\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableLists.py\")\n    print(type(liste))\n    print(\"len(liste) =\", len(liste))\n    print(\"liste =\", liste)\n    # Lire un element\n    print(\"liste[0] =\", liste[0])\n    print(\"index of liste[0] =\", liste.index(2))\n    # Modifier un element",
+        "detail": "Variables.VariableLists",
+        "documentation": {}
+    },
+    {
+        "label": "my_set",
+        "kind": 5,
+        "importPath": "Variables.VariableSets",
+        "description": "Variables.VariableSets",
+        "peekOfCode": "my_set = {2, 3, 2, 5, 7, 11, 13, 11, 12.522, \"dtdt\"}\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableSets.py\")\n    print(type(my_set))\n    print(\"len(my_set) =\", len(my_set))\n    print(\"my_set =\", my_set)\n    # Lire un element",
+        "detail": "Variables.VariableSets",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "Variables.VariableStr",
+        "description": "Variables.VariableStr",
+        "peekOfCode": "string = \"Aime\"\nterminaison = '\\0'\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableStr.py\")\n    print(type(string))\n    string += \"\"\n    print(string)\n    print(len(string))\n    print(string[0])\n    string = string.upper()",
+        "detail": "Variables.VariableStr",
+        "documentation": {}
+    },
+    {
+        "label": "terminaison",
+        "kind": 5,
+        "importPath": "Variables.VariableStr",
+        "description": "Variables.VariableStr",
+        "peekOfCode": "terminaison = '\\0'\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableStr.py\")\n    print(type(string))\n    string += \"\"\n    print(string)\n    print(len(string))\n    print(string[0])\n    string = string.upper()\n    print(string)",
+        "detail": "Variables.VariableStr",
+        "documentation": {}
+    },
+    {
+        "label": "my_tuple",
+        "kind": 5,
+        "importPath": "Variables.VariableTuples",
+        "description": "Variables.VariableTuples",
+        "peekOfCode": "my_tuple = (2, 3, 2, 5, 7, 11, 13, 11, 12.522, \"dtdt\")\nif __name__ == \"__main__\":\n    print(\"BEGIN VariableTuples.py\")\n    print(type(my_tuple))\n    print(\"len(my_tuple) =\", len(my_tuple))\n    print(\"my_tuple =\", my_tuple)\n    # Lire un element\n    print(\"my_tuple[0] =\", my_tuple[0])\n    print(\"index of my_tuple[0] =\", my_tuple.index(2))\n    my_list = list(my_tuple)",
+        "detail": "Variables.VariableTuples",
+        "documentation": {}
+    }
+]
